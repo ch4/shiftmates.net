@@ -4,8 +4,8 @@ jQuery(document).ready(function(){
 
 		var action = $(this).attr('action');
 
-		$("#mesaj").slideUp(750,function() {
-		$('#mesaj').hide();
+		$("#mc_embed_signup").slideUp(750,function() {
+		$('#mc_embed_signup').hide();
 
  		$('#ssubmit')
 			.after('<img src="images/ajax-loader.gif" class="subscribe-loader" />')
@@ -15,8 +15,8 @@ jQuery(document).ready(function(){
 			email: $('#semail').val()
 		},
 			function(data){
-				document.getElementById('mesaj').innerHTML = data;
-				$('#mesaj').slideDown('slow');
+				document.getElementById('mc_embed_signup').innerHTML = data;
+				$('#mc_embed_signup').slideDown('slow');
 				$('#subscribe img.subscribe-loader').fadeOut('slow',function(){$(this).remove()});
 				$('#ssubmit').removeAttr('disabled');
 				if(data.match('success') != null) $('#subscribe').slideUp('slow');

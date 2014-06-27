@@ -49,6 +49,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: "Didact Gothic";
+
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -199,8 +201,14 @@ p.copyright {
 	clear:both;
 }
 
+h1 {
+	font-size: 4em;
+text-align: center;
+padding: 30px;
+}
+
 h2 {
-	font-family: 'CopseRegular', CopseRegular, Helvetica, Arial, sans-serif;
+	font-family: 'Didact Gothic', Helvetica, Arial, sans-serif;
 	font-size:28px;
 	text-align:center;
 	height:29px;
@@ -211,18 +219,19 @@ h2 {
 }
 
 h3 {
-	font-family:Georgia;
+	font-family:'Didact Gothic';
 	font-size:18px;
 	font-style:italic;
-	text-align:center;
+	text-align:left;
 	height:29px;
 	line-height:38px;
 	font-weight:normal;
 	color:#a5a5a5;
+	padding-left: 148px;
 }
 
 h4 {
-	font-family:Georgia;
+	font-family:'Didact Gothic';
 	font-size:14px;
 	font-style:italic;
 	text-align:center;
@@ -231,6 +240,7 @@ h4 {
 	font-weight:normal;
 	color:#a5a5a5;
 }
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	3.	Main Content Styles
@@ -295,7 +305,7 @@ h4 {
 	margin-top:40px;
 }
 .email-list {
-	margin-top:13px;
+	margin-top:54px;
 }
 form#subscribe, form#cform {
 	margin:0;
@@ -307,9 +317,9 @@ form#subscribe, form#cform {
 	display:none;
 }
 
-#message, #mesaj { margin: 0; padding: 0; }
+#message, #mc_embed_signup { margin: 0; padding: 0; }
 
-input#semail {
+input#semail, input#mce-EMAIL {
 	width:293px;
 	height:18px;
 	padding:10px 36px 10px 15px;
@@ -351,7 +361,7 @@ input#verify {
 	-webkit-border-radius: 2px;	
 }
 
-input#submit, input#ssubmit {
+input#submit, input#ssubmit, input#mc-embedded-subscribe {
 	position:relative;
 	border-radius: 2px 2px 2px 2px;
 	-moz-border-radius: 2px;
@@ -373,7 +383,7 @@ input#submit, input#ssubmit {
 	behavior: url(PIE.htc);		
 }
 
-input#ssubmit {
+input#ssubmit, input#mc-embedded-subscribe {
 	width:118px;
 }
 
@@ -776,4 +786,36 @@ li a.dropbox {
   .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
   .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
 
+/*-----------------------------------------------------------------------------------*/
+/*	6.
+/*-----------------------------------------------------------------------------------*/
+
+.countdown {
+	padding: 9px 0 0px 173px;
+}
+
+
+.description {
+	padding-left: 100px;
+	font-size: 20px;
+	line-height: 29px;
+	text-align: center;
+}
+.response {
+	text-align: center;
+}
+
+.email, .email a{
+	font-family:'Didact Gothic';
+	font-size:18px;
+	text-align:center;
+	height:29px;
+	line-height:38px;
+	font-weight: 100;
+	color:#a5a5a5;
+}
+
+.thumbnail {
+	width: 76px;
+}
   
