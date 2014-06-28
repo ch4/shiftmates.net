@@ -1,10 +1,30 @@
+<<<<<<< HEAD
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 
+<title>ShiftMates</title> 
+
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+</style>
+=======
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>ShiftMates</title>
 <link href="tools/style.css" rel="stylesheet" type="text/css" />
+>>>>>>> gh-pages
 <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 
 <script type="text/javascript" src="tools/jquery.min.js"></script> 
@@ -53,7 +73,57 @@
 							<div class="response" id="mce-success-response" style="display:none"></div>
 						</div>
 					</div><!--end form-wrapper-->
+<<<<<<< HEAD
+				</div><!--end home-->
+				
+			</div><!--end content-page-->
+		
+			<div class="bottom-page">
+				<div class="email"><a href="mailto:goshiftmates@gmail.com">goshiftmates@gmail.com</a></div>
+				<ul class="social">
+				<!-- Change the # with the link to your social page. -->
+					<!-- <li><a class="facebook tooltip" href="#" title="Facebook"></a></li> -->
+					<!-- <li><a class="twitter tooltip" href="https://twitter.com/shiftmates" title="Twitter"></a></li> -->
+					<!-- <li><a class="youtube tooltip" href="#" title="YouTube"></a></li> -->
+					<!-- <li><a class="skype tooltip" href="#" title="Skype"></a></li> -->
+					<!-- <li><a class="dribbble tooltip" href="#" title="Dribbble"></a></li>	 -->
+					
+<!-- You can add to social list buttons for digg, delicious, vimeo and dropbox. Just delete the brackets from below -->
+			<!--	<li><a class="digg tooltip" href="#" title="Digg"></a></li>
+					<li><a class="delicious tooltip" href="#" title="Delicious"></a></li>
+					<li><a class="vimeo tooltip" href="#" title="Vimeo"></a></li>
+					<li><a class="dropbox tooltip" href="#" title="DropBox"></a></li>		
+			-->
+				</ul>
+
+			</div><!--end bottom-page-->
+		</div><!--end book-->
+		
+		<p class="copyright" style="display:none;">Copyright &copy; PaperLaunch - All Rights Reserved</p>
+		
+	</div><!--end wrapper-->
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>	<!-- placeholder html5 tag support for IE and Old Browsers -->
+
+<!-- ClickTale Bottom part -->
+
+<script type='text/javascript'>
+// The ClickTale Balkan Tracking Code may be programmatically customized using hooks:
+// 
+//   function ClickTalePreRecordingHook() { /* place your customized code here */  }
+//
+// For details about ClickTale hooks, please consult the wiki page http://wiki.clicktale.com/Article/Customizing_code_version_2
+
+document.write(unescape("%3Cscript%20src='"+
+(document.location.protocol=='https:'?
+"https://cdnssl.clicktale.net/www07/ptc/48045b12-3d2d-415b-9e3c-22f513d04ab2.js":
+"http://cdn.clicktale.net/www07/ptc/48045b12-3d2d-415b-9e3c-22f513d04ab2.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- ClickTale end of Bottom part -->
+</body> 
+=======
 	</div>
 </div>
 </body>
+>>>>>>> gh-pages
 </html>
