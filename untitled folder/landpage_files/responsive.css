@@ -1,0 +1,268 @@
+/* 
+   ------------------------------------------------------
+					Responsive Styles
+   ------------------------------------------------------
+*/
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.titlebar h1 { font-size: 40px; }
+	.titlebar p { font-size: 18px; padding: 0 5%; }
+	
+	/*------------------------------------------*/
+	/*	 Cover
+	/*------------------------------------------*/
+	
+	#cover_description { margin: 80px 0; }
+	
+	/*------------------------------------------*/
+	/*	 Pricing
+	/*------------------------------------------*/
+	
+	.pricing-table .plan-title {font-size: 18px; }
+	
+	/*------------------------------------------*/
+	/*	 Testimonials
+	/*------------------------------------------*/
+	
+	.testimonials {margin: 50px 5%; }
+	
+	/*------------------------------------------*/
+	/*	  FAQs Accordion
+	/*------------------------------------------*/
+
+	.accordion a { font-size: 14px; line-height: 20px; padding: 10px 10px 10px 40px;}	
+	.accordion li div { line-height: 20px;padding: 10px; }
+	
+	/*------------------------------------------*/
+	/*	  Google Map Height 
+	/*------------------------------------------*/  
+
+	#google-map { padding: 0px 0px 74%; }
+	
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/  
+	
+	#newsletter .titlebar p { padding: 0 15%; }
+
+			
+}
+
+
+@media only screen and (max-width: 991px){
+	
+	.titlebar h1 { font-size: 40px; }
+	.titlebar p { font-size: 18px; padding: 0; }
+	
+	/*------------------------------------------*/
+	/*	 Cover
+	/*------------------------------------------*/
+	
+	#cover {font-size: 16px; }
+	#cover_description { margin: 40px 0; }	
+	#cover_description h2 { font-size: 36px; }
+	#cover_description h1 {font-size: 54px; line-height: 54px; margin-top: 10px; margin-bottom: 10px; }
+	
+	/*------------------------------------------*/
+	/*	  Team
+	/*------------------------------------------*/ 
+	
+	#team-member-holder { padding: 0; }
+	#team_1, #team_2, #team_3, #team_4 { padding-right: 40px; padding-left: 40px;}
+	
+	/*------------------------------------------*/
+	/*	 Testimonials
+	/*------------------------------------------*/
+	
+	.testimonials {margin: 50px 0; }
+	.testimonials p { font-size: 20px; }
+	
+	/*------------------------------------------*/
+	/*	 Pricing
+	/*------------------------------------------*/
+	
+	#pricing-table-holder { padding: 0;}	
+	.pricing-table { margin-left: 0; }	
+	#price_1, #price_2, #price_3, #price_4 { padding-right: 30px; padding-left: 30px;}
+	.pricing-table ul.features li { font-size: 16px; }
+	
+	/*------------------------------------------*/
+	/*	  FAQs Accordion
+	/*------------------------------------------*/
+
+	.accordion a { font-size: 16px; line-height: 26px; padding: 10px 10px 10px 40px;}	
+	.accordion li div { line-height: 20px;padding: 10px; }
+	
+	/*------------------------------------------*/
+	/*	  Google Map Height 
+	/*------------------------------------------*/  
+
+	#google-map { margin-top: 60px; padding: 0px 0px 48%; }
+	
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/  
+	
+	#newsletter .titlebar p { padding: 0 5%; }
+	.subscribe-form { width: 86%; }
+	
+	/*------------------------------------------*/
+	/*	  Contacts
+	/*------------------------------------------*/ 
+	#input_name { padding-right: 15px; }
+	#input_email { padding-left: 15px; }
+	
+		
+}
+
+@media only screen and (max-width: 767px){
+	
+	.titlebar h1 { font-size: 36px; }
+	.titlebar p { font-size: 17px; padding: 0 5%; }
+	
+	/*------------------------------------------*/
+	/*	 Responsive Menu
+	/*------------------------------------------*/
+	
+	.navbar-nav { margin: 0 -15px; border-top: 1px solid #ddd; background-color: #f6f6f6;}	
+	.navbar-brand { padding: 15px 15px 15px 30px;}
+	.navbar-nav > li { text-align: center;}
+	.navbar-nav > li > a { line-height: 40px; text-align: center; display: inline-block; text-align: center;}
+	
+	/*------------------------------------------*/
+	/*	 Cover
+	/*------------------------------------------*/
+	
+	#cover_description {  text-align: center; margin: 20px 0 0; padding: 0 8%; }	
+	#cover_image { height: 350px; overflow: hidden;}
+	
+	/*------------------------------------------*/
+	/*	  Features
+	/*------------------------------------------*/ 
+	
+	.feature-box {padding-left: 10%; padding-right: 10%; }
+
+	
+	/*------------------------------------------*/
+	/*	  Team
+	/*------------------------------------------*/ 
+	
+	#team-member-holder { padding: 0 5%; }
+	#team_1, #team_2, #team_3, #team_4 { padding-right: 30px; padding-left: 30px;}
+	
+	/*------------------------------------------*/
+	/*	 Testimonials
+	/*------------------------------------------*/
+	
+	.testimonials {margin: 50px 8%; }
+	.slides {margin: 0 0 40px;}
+	.testimonials p { font-size: 18px; }
+	
+	/*------------------------------------------*/
+	/*	 Pricing
+	/*------------------------------------------*/
+	
+	#pricing-table-holder { padding: 0 5%;}		
+	#price_1, #price_2, #price_3, #price_4 { padding-right: 20px; padding-left: 20px;}
+	
+	/*------------------------------------------*/
+	/*	  FAQs Accordion
+	/*------------------------------------------*/
+
+	#question_1, #question_2, #question_3, #question_4,
+	#question_5, #question_6, #question_7, #question_8 { padding: 0 5%; }
+	.accordion a { font-size: 16px; line-height: 26px; padding: 10px 10px 10px 40px;}	
+	
+	/*------------------------------------------*/
+	/*	  Contacts
+	/*------------------------------------------*/ 
+	
+	#contact .col-sm-12 { padding: 0 10%; }
+	#contact .titlebar p { padding: 0 5%;}
+	
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/  
+	
+	.subscribe-form { width: 80%; }
+	
+	/*------------------------------------------*/
+	/*	  Footer
+	/*------------------------------------------*/  
+	
+	#footer_copy, #footer_icons { text-align: center; }
+	.footer-socials {display: inline-block; margin: 10px auto 0; float: none !important;}
+	
+	
+}
+
+
+@media (max-width: 480px) {
+	
+	#stlChanger { display: none; }
+	
+	/*------------------------------------------*/
+	/*	 Cover
+	/*------------------------------------------*/
+	
+	#cover_description { text-align: center; margin: 60px 0 80px; padding: 0 2%; }	
+	#cover_image { display: none; }
+	#cover_description h1 { margin-top: 20px; margin-bottom: 20px; }
+	
+	/*------------------------------------------*/
+	/*	  Features
+	/*------------------------------------------*/ 
+	
+	.feature-box {padding-left: 2%; padding-right: 2%; }
+	
+	/*------------------------------------------*/
+	/*	 Team
+	/*------------------------------------------*/ 
+	
+	#team-member-holder { padding: 0 15px;}
+	#team-member-holder .col-xs-6 { width: 100%; float: none !important; }	
+	
+	/*------------------------------------------*/
+	/*	 Testimonials
+	/*------------------------------------------*/
+	
+	.testimonials {margin: 50px 0; }
+	
+	/*------------------------------------------*/
+	/*	 Pricing
+	/*------------------------------------------*/
+
+	#pricing-table-holder { padding: 0 10%;}	
+	#pricing-table-holder .col-xs-6 { width: 100%; float: none !important; }	
+
+	/*------------------------------------------*/
+	/*	  FAQs Accordion
+	/*------------------------------------------*/
+	
+	#question_1, #question_2, #question_3, #question_4,
+	#question_5, #question_6, #question_7, #question_8 { padding: 0 2%; }
+	.accordion a { font-size: 15px; line-height: 20px; padding: 10px 10px 10px 40px;}	
+	
+	/*------------------------------------------*/
+	/*	  Google Map Height 
+	/*------------------------------------------*/  
+
+	#google-map { margin-top: 60px; padding: 0px 0px 60%; }
+	
+	/*------------------------------------------*/
+	/*	  Newsletter
+	/*------------------------------------------*/  
+	
+	.subscribe-form { width: 90%; }
+	.subscribe-input { width: 65%; }
+	.subscribe-submit { width: 35%; }
+	
+	
+}
+
+
+@media (max-width: 320px) {
+
+}

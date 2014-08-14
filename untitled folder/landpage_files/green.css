@@ -1,0 +1,1228 @@
+
+/*Template Name: Tesoro - Super Simple Landing Page Template
+Theme URL: http://themeforest.net/user/DSA79/
+Description: Tesoro - Super Simple Landing Page Template
+Author: DSA79
+Author URL: http://themeforest.net/user/DSA79
+Version: 1.0.0
+Website: www.dsathemes.com
+Tags: responsive, html5 template, simple, landing page, business, corporate, project, bootstrap3
+*/
+
+
+
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+
+/*   01 - General & Basic Styles   */
+/*   02 - Header & Navigation      */
+/*   03 - Cover			           */
+/*   04 - Features                 */
+/*   05 - Team                     */
+/*   06 - Pricing Tables           */
+/*   07 - Testimonials Rotator	   */
+/*   08 - FAQs			 	  	   */
+/*   09 - Contacts		 	  	   */
+/*   10 - Newsletter	 	  	   */
+/*   11 - Footer		 	  	   */
+/*   12 - Scroll to Top	 	  	   */
+
+
+
+/* ==========================================================================
+   01. GENERAL & BASIC STYLES
+   ========================================================================== */ 
+ 
+#content-wrapper {
+	margin-top: 60px;
+} 
+ 
+.theme-color {
+	color: #71893b;
+}
+
+/*------------------------------------------*/
+/*	 Page Preload
+/*------------------------------------------*/
+
+#preOverlay {
+	background-color: #71893b;
+}
+
+#jpreLoader {
+	width: 300px;
+	height: 100px;
+	position: relative;
+	z-index: 1;
+	margin:0 auto;
+}
+#jpreBar {
+	position:fixed;
+	width:100%;
+	height:100% !important;
+	top:0;
+	left:0;
+}
+#jprePercentage {
+	color:#ddd;
+	font-family: 'Lato', sans-serif;
+	font-size: 70px;
+	font-weight: 600;
+	text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+	text-align:center;	
+	letter-spacing:-2px;
+	z-index:2;
+	margin: 0;
+}
+  
+/*------------------------------------------*/
+/*	 Headers
+/*------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0; 
+	margin-bottom: 10px;
+}
+
+/*------------------------------------------*/
+/*	 Link Setting
+/*------------------------------------------*/
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+a:hover {
+	color: #444;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #f8f8f8;
+	outline: none;
+	border: none;
+	text-decoration: none;
+} 
+
+/*------------------------------------------*/
+/*	 Lists
+/*------------------------------------------*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*------------------------------------------*/
+/*	 Section Titlebar
+/*------------------------------------------*/
+
+.titlebar {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.titlebar h1 {
+	color: #444;
+	font-size: 44px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.titlebar p {
+	color: #666;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding: 0 10%;
+}
+
+/*------------------------------------------*/
+/*	 Black Button
+/*------------------------------------------*/
+
+.btn-black {
+	background-color: #444;
+	border: 1px solid #333;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700; 
+	padding: 10px 20px;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.btn-black:hover {
+	background-color: #555;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+	color: #fff;
+}
+
+.btn:focus {
+	color: #f8f8f8;
+	outline: none;
+	text-decoration: none;
+}
+
+
+
+/* ==========================================================================
+   02. HEADER & NAVIGATION
+   ========================================================================== */ 
+
+/*------------------------------------------*/
+/*	 Logo Image    
+/*------------------------------------------*/
+
+.navbar-brand {
+	padding: 15px;
+}   
+      
+/*------------------------------------------*/
+/*	 Navigation Menu    
+/*------------------------------------------*/
+
+.navbar {	
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #ddd;
+}
+
+.navbar-nav > li > a {
+	color: #666;	
+    display: block;
+	padding: 0 15px;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	line-height: 57px;
+	border-bottom: 3px solid transparent;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a.selected-nav {
+	background: none;
+	border-bottom: 3px solid #71893b;
+}
+
+/*------------------------------------------*/
+/*	 Responsive Menu    
+/*------------------------------------------*/
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 10px;
+	margin: 12px 30px 12px 0;
+    background-color: none;
+	border: 2px solid #888;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #888;
+	height: 2px;
+}
+
+
+
+/* ==========================================================================
+   03. COVER
+   ========================================================================== */ 
+   
+#cover {
+	background: url(../img/thumbs/cover_bkg.jpg) center bottom no-repeat;
+	font-size: 18px;
+}
+
+/*------------------------------------------*/
+/*	  Cover Description
+/*------------------------------------------*/
+
+#cover_description {
+	margin: 150px 0;
+	opacity: 0;
+}
+
+#cover_description h2 {
+	font-size: 50px;
+}
+
+#cover_description h1 {
+	font-size: 70px;
+	line-height: 60px;
+	text-transform:uppercase;
+	font-weight:900;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*------------------------------------------*/
+/*	  Cover Image
+/*------------------------------------------*/
+
+#cover_image {
+	opacity: 0;
+}
+
+#cover_image .img-responsive { 
+	display: inline-block; 
+}
+
+
+
+/* ==========================================================================
+   04. FEATURES
+   ========================================================================== */
+ 
+#features {
+	padding-top: 80px;
+	padding-bottom: 30px;
+	background-image: url(../img/thumbs/pattern1.png);
+	background-repeat: repeat;
+	background-position: 0 0;
+	background-color: #71893b;	
+	color: #f8f8f8;
+} 
+
+#features h1, #features .titlebar p {
+	color: #f8f8f8;
+}
+
+/*------------------------------------------*/
+/*	  Feature Box
+/*------------------------------------------*/
+
+.feature-box {
+	margin-bottom: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*------------------------------------------*/
+/*	  Feature Box Icon
+/*------------------------------------------*/
+
+.feature-box-icon {
+	float: left;
+}
+
+.feature-box-icon i {
+	font-size: 46px;
+	margin: 2px 17px;
+}
+
+/*------------------------------------------*/
+/*	  Feature Box Content
+/*------------------------------------------*/
+
+.feature-box-content {
+	padding-left: 80px;
+}
+
+.feature-box-content h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+
+/* ==========================================================================
+   05. TEAM
+   ========================================================================== */
+   
+#team {
+	padding-top: 80px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ddd;
+}
+
+.team-member {
+	text-align: center;
+	margin-bottom: 50px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	  Team Member Photo
+/*------------------------------------------*/
+
+.img-block { 
+	margin: 10px 10px 20px 10px;
+}
+
+.img-block img {
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	box-shadow: 0px 0px 0px 0 rgba(10, 10, 10, 0.15);
+	opacity: 1;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	  Team Member Photo Hover
+/*------------------------------------------*/
+
+.team-member:hover .img-block img {
+	box-shadow: 0px 0px 0px 10px rgba(10, 10, 10, 0.15);
+	opacity: .85;
+}
+
+/*------------------------------------------*/
+/*	  Team Member Meta
+/*------------------------------------------*/
+
+.team-img-meta h4 {
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.team-img-meta p {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	padding: 0 15%;
+}
+
+p.member-info {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	padding: 0 5%;
+}
+
+/*------------------------------------------*/
+/*	  Team Member Social Icons 
+/*------------------------------------------*/
+
+.team-member-socials {
+	text-align: right;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.team-member-socials li {
+	float: left;
+    display: inline-block !important;
+    vertical-align: top;
+    width: auto !important;
+    clear: none !important;
+}
+
+.page_social {
+    width: 40px;
+    height: 40px;
+	color: #aaa;
+	font-size: 14px; 
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    text-decoration: none;
+	margin: 0 3px 5px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+
+
+/* ==========================================================================
+   06. TESTIMONIALS ROTATOR
+   ========================================================================== */
+
+#testimonials-rotator {
+	background-image: url(../img/thumbs/pattern2.png);
+	background-repeat: repeat;
+	background-position: 0 0;
+	background-color: #333;	
+	color: #fff;
+    text-align: center;
+}
+
+.testimonials {
+	margin: 50px 8%;
+}
+
+.slides {
+	margin: 30px 0 60px;
+}
+
+/*------------------------------------------*/
+/*	 Testimonial Message
+/*------------------------------------------*/
+
+.testimonials p {
+	font-size: 24px;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	line-height: 30px;
+    padding-top: 10px;
+}
+
+/*------------------------------------------*/
+/*	 Message Author
+/*------------------------------------------*/
+
+.testimonials p.author {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 0;
+}
+
+.testimonials p.author span {
+	color: #829a4d;
+	font-style: italic;
+}
+
+
+
+/* ==========================================================================
+   07. PRICING 
+   ========================================================================== */
+
+#pricing {
+	padding-top: 80px;
+	padding-bottom: 50px;
+} 
+
+#pricing-table-holder {
+	padding: 0 30px; 
+}
+
+#price_1, #price_2, #price_3, #price_4 {
+	padding-right: 0;
+	padding-left: 0;
+	margin-bottom: 50px;
+}
+
+.pricing-table {
+	border: 1px solid #cfcfcf;
+	margin-left: -1px;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+/*------------------------------------------*/
+/*	  Pricing Table Header
+/*------------------------------------------*/
+
+.pricing-table .price-header {
+	border-bottom: 1px solid #e7e7e7;
+	position: relative;
+}
+
+.pricing-table .plan-title {
+    color: #333;
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+    padding: 30px 15px;
+    margin: 0;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;	
+}
+
+/*------------------------------------------*/
+/*	  Pricing Table Price Plan
+/*------------------------------------------*/
+
+.pricing-table .plan-price {
+    background-color: #f3f3f3;
+	margin: 0;
+	line-height: normal;
+    padding: 20px;
+    border-top: 1px solid #e7e7e7;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;	
+}
+
+.pricing-table .plan-price h2 {
+	color:  #222;
+	font-size: 44px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.pricing-table .plan-price span {
+	color: #999;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/*------------------------------------------*/
+/*	  Pricing Table Body
+/*------------------------------------------*/
+
+.pricing-table ul.features {
+    padding: 5px 20px;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.pricing-table ul.features li {
+    border-top: 1px solid #e7e7e7;
+    padding: 10px 25px; 
+}
+
+.pricing-table ul.features li:nth-child(1),
+.pricing-table.featured ul.features li:nth-child(1),
+.pricing-table:hover ul.features li:nth-child(1) {
+    border: none;
+}
+
+/*------------------------------------------*/
+/*	  Pricing Table Footer
+/*------------------------------------------*/
+
+.pricing-table .price-footer {
+	background-color: #fcfcfc;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid #aaa;
+	-webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	  Featured Table
+/*------------------------------------------*/
+
+.pricing-table.featured {
+	border: 1px solid #71893b;
+	margin-left: -1px;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.pricing-table:hover {
+	border: 1px solid #71893b;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.pricing-table.featured .price-header,
+.pricing-table:hover .price-header  {
+	border-bottom: 1px solid #4c5e25;
+}
+
+.pricing-table.featured .plan-title,
+.pricing-table:hover  .plan-title,
+.pricing-table.featured ul.features,
+.pricing-table:hover ul.features {
+	background-color: #71893b;
+	color: #f7f7f7;
+}
+
+.pricing-table.featured .plan-price,
+.pricing-table:hover .plan-price,
+.pricing-table.featured .price-footer,
+.pricing-table:hover .price-footer  {
+	background-color: #71893b;
+	color: #f7f7f7;
+	border-top: 1px solid #4c5e25;
+}
+
+.pricing-table.featured .plan-price h2,
+.pricing-table:hover .plan-price h2,
+.pricing-table.featured .plan-price span,
+.pricing-table:hover .plan-price span { 
+		color: #f7f7f7;
+}
+
+.pricing-table.featured ul.features li,
+.pricing-table:hover ul.features li {
+    border-top: 1px solid #60782B;
+}
+
+/*------------------------------------------*/
+/*	  Corner Ribbon
+/*------------------------------------------*/
+
+.ribbon-wrapper {
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+}
+
+.ribbon {
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: rgba(150, 150, 150, 0.3) 0px 1px 0px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform:    rotate(45deg);
+	-ms-transform:     rotate(45deg);
+	-o-transform:      rotate(45deg);
+	position: relative;
+	padding: 7px 0;
+	left: -5px;
+	top: 15px;
+	width: 120px;
+	background-color: #EB5840;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#EB5840), to(#DF2E11));
+	background-image: -webkit-linear-gradient(top, #EB5840, #DF2E11);
+	background-image:    -moz-linear-gradient(top, #EB5840, #DF2E11);
+	background-image:     -ms-linear-gradient(top, #EB5840, #DF2E11);
+	background-image:      -o-linear-gradient(top, #EB5840, #DF2E11);
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:    0px 0px 3px rgba(0 ,0, 0, 0.3);
+	box-shadow:         0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon:before, .ribbon:after {
+	content: "";
+	border-top:   3px solid #6e8900;
+	border-left:  3px solid transparent;
+	border-right: 3px solid transparent;
+	position:absolute;
+	bottom: -3px;
+}
+
+.ribbon:before {
+	left: 0;
+}
+.ribbon:after {
+	right: 0;
+}
+
+
+
+/* ==========================================================================
+   08. FAQs
+   ========================================================================== */
+
+#faq {
+	padding-top: 80px;
+	padding-bottom: 100px;
+	background-color: #ecf0f1;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+#question_1,
+#question_2,
+#question_3,
+#question_4,
+#question_5,
+#question_6,
+#question_7,
+#question_8 { 
+	width: 100%;
+	display: block; 
+	float: left; 
+	padding: 0; 
+	margin: 5px 0; 	
+	cursor: pointer; 	
+}
+
+/*------------------------------------------*/
+/*	  FAQs Accordion
+/*------------------------------------------*/
+
+.accordion a { 
+	color: #666; 
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	line-height: 26px;
+	padding: 10px 40px;
+	text-decoration: none; 
+	border-left: 4px solid #d0d0d0;
+	border-bottom: 1px solid rgba(190, 190, 190, 0.2);
+	display: block; 
+	cursor: pointer; 
+	background: #E4E4E1 url(../img/icons/open.png) no-repeat center left;
+}
+
+.accordion li.active>a { 
+	background: #E4E4E1 url(../img/icons/close.png) no-repeat center left;  
+	color: #151515;
+	border-left: 4px solid #71893b;
+	border-bottom: 1px solid #ccc;
+	box-shadow: none;
+}
+
+/*------------------------------------------*/
+/*	  FAQs Answer
+/*------------------------------------------*/
+
+.accordion li div { 
+	line-height: 22px;
+	padding: 15px 10px; 
+	display: block; 
+	clear: both; 
+	float: left; 
+}
+
+
+
+/* ==========================================================================
+   09. CONTACTS 
+   ========================================================================== */
+
+#contact {
+	padding-top: 90px;
+	padding-bottom: 100px;
+} 
+
+#contact .titlebar p {
+	color: #666;
+	font-weight: 400;
+	font-style: italic;
+}
+
+#contact .col-sm-6 {
+	padding-left: 50;
+	padding-right: 50px;
+}
+
+
+/*------------------------------------------*/
+/*	  Contact Form Input
+/*------------------------------------------*/
+
+#contact-form .form-control {
+	height: 46px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	background: #f3f3f3;
+	color: #444;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	box-shadow: 0 0 0 0;
+	padding: 8px;
+	margin-bottom: 15px;
+}
+
+#contact-form textarea {
+	min-height:180px;
+}
+
+#input_name {
+	padding-right: 5px; 
+}
+
+#input_email {
+	padding-left: 5px; 
+}
+
+
+/*------------------------------------------*/
+/*	  Contact Form Error Message 
+/*------------------------------------------*/
+
+.error {
+	padding: 0 5px 20px;
+	color: #EB5840;
+}
+
+/*------------------------------------------*/
+/*	  Google Map Height 
+/*------------------------------------------*/  
+
+#google-map {
+    position: relative;
+    padding: 0px 0px 60%;
+    height: 0px;
+    overflow: hidden;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 3px rgba(10, 10, 10, 0.3);
+}
+
+.embed iframe, .embed object, .embed embed {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+	border:0;
+}
+
+.contact-details ul li {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	margin: 2px 0;
+}
+
+
+/* ==========================================================================
+   10. NEWSLETTER  
+   ========================================================================== */
+
+#newsletter {
+	background-color: #ecf0f1;
+	border-top: 1px solid #ddd;
+	color: #333;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#newsletter .titlebar {
+	margin-bottom: 0;
+}
+
+#newsletter .titlebar p {
+	color: #666;
+	font-weight: 400;
+	font-style: italic;
+	padding: 0 18%;
+}
+
+#newsletter_title {
+	margin-top: 15px;
+}
+
+#newsletter_title h1 {
+	font-weight: 400;
+	margin-bottom: 3px;
+}
+
+#newsletter_title p {
+	color: #999;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/*------------------------------------------*/
+/*	  Newsletter Form
+/*------------------------------------------*/
+
+.subscribe-form {
+	margin: 14px auto;
+    position: relative;
+    z-index: 10;
+	width: 60%;
+}
+
+#newsletter_form p {
+	font-size: 14px;
+	line-height: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	text-align: right;
+}
+
+.subscribe-input {
+	width: 75%;
+    height: 54px;
+	color: #999;
+	font-size: 16px;
+    font-weight: 300;
+    color: #222;
+	padding-left: 10px;
+	border-radius:6px 0 0 6px;
+}
+
+.subscribe-submit {
+	width: 25%;
+	height: 54px;
+	background: #71893b;
+	border: 1px solid #8a2c07;
+    color: #fff;
+	font-weight:900;
+	text-decoration:none;
+	text-transform: uppercase;
+	text-align:center;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border:none;
+	border-radius:0 6px 6px 0;
+    cursor: pointer;
+    outline: 0;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-submit:active {
+    outline: 0;
+}
+
+.subscribe-submit:hover {
+    opacity:0.8;
+}
+
+
+
+/* ==========================================================================
+   11. FOOTER   
+   ========================================================================== */
+
+#footer { 
+	padding: 20px 0 15px;
+	background-color: #333;
+}
+
+#footer p {
+	color: #999;
+	margin-bottom: 0;	
+}
+
+/*------------------------------------------*/
+/*	 Footer Social Icons  
+/*------------------------------------------*/
+
+#footer_icons {
+	margin:3px 0;
+}
+
+.footer-socials li {
+	float: left;
+	width: auto !important;
+    display: inline-block !important;
+    vertical-align: top;
+    clear: none !important;
+	line-height: 70px;
+}
+
+.foo_social {
+    width: 34px;
+    height: 34px;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+    line-height: 28px;
+	margin: 0 4px;
+	border: 2px solid #999;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	 Footer Icons Hover 
+/*------------------------------------------*/
+
+.ico-facebook:hover {background-color: #3b5998;color: #f8f8f8;border-color:#3b5998;}
+.ico-twitter:hover {background-color: #00a9ed;color: #f8f8f8;border-color:#00a9ed;}
+.ico-google-plus:hover {background-color: #cd1111;color: #f8f8f8;border-color:#cd1111;}
+.ico-linkedin:hover {background-color: #015886;color: #f8f8f8;border-color:#015886;}
+.ico-dribbble:hover {background-color: #d92d84;color: #f8f8f8;border-color:#d92d84;}
+.ico-instagram:hover {background-color: #beb3a8;color: #f8f8f8;border-color:#beb3a8}
+.ico-pinterest:hover {background-color: #ac281a;color: #f8f8f8;border-color:#ac281a;}
+.ico-dropbox:hover {background-color: #008ad2;color: #f8f8f8;border-color:#008ad2;}
+.ico-skype:hover {background-color: #00a9ed;color: #f8f8f8;border-color:#00a9ed;}
+.ico-youtube:hover {background-color: #cd1b20;color: #f8f8f8;border-color:#cd1b20;}
+.ico-tumblr:hover {background-color: #3a5976;color: #f8f8f8;border-color:#3a5976;}
+.ico-vimeo:hover {background-color: #00adee;color: #f8f8f8;border-color:#00adee;}
+.ico-flickr:hover {background-color: #d2d2d2;color: #f8f8f8;border-color:#d2d2d2;}
+.ico-github:hover {background-color: #222;color: #f8f8f8;border-color:#222;}
+.ico-renren:hover {background-color: #364a83;color: #f8f8f8;border-color:#364a83;}
+.ico-vk:hover {background-color: #3b5998;color: #f8f8f8;border-color:#3b5998;}
+.ico-xing:hover {background-color: #015f5e;color: #f8f8f8;border-color:#015f5e;}
+.ico-weibo:hover {background-color: #be4443;color: #f8f8f8;border-color:#be4443;}
+.ico-rss:hover {background-color: #ff6600;color: #f8f8f8;border-color:#ff6600;}
+
+
+
+/* ==========================================================================
+   12. SCROLL TO TOP   
+   ========================================================================== */
+
+#scrollUp {
+	bottom: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	position: fixed;
+	display: none;
+	background: rgba(123, 123, 123, 0.65) url(../img/icons/back-to-top.png) no-repeat 50% 48%;
+	-webkit-transition: all 250ms linear;
+	-moz-transition: all 250ms linear;
+	transition: all 250ms linear;	
+}
+
+#scrollUp:hover {
+	background-color: rgba(113, 137, 59, 0.95);
+}
+
+nav a#pull {  
+    display: none;  
+}
+
+
+
+
+/* ==========================================================================
+   STYLE CHANGER 
+   ========================================================================== */
+
+#stlChanger {
+	color:#cecece;
+	font-size: 14px;
+	overflow:hidden;
+	position:fixed;
+	top: 80px;
+	left:0;
+	z-index:1000000 ;
+}
+
+#stlChanger .siteChanger, 
+#stlChanger .bgChanger,
+ #stlChanger .buts {
+	position:relative;
+	overflow:hidden;
+}
+
+#stlChanger .siteChanger, 
+#stlChanger .bgChanger {
+	min-width: 220px;
+	min-height: 220px;
+}
+
+#stlChanger a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#stlChanger a:hover {text-decoration:none;}
+
+#stlChanger .blockChanger {
+	width: 170px;
+}
+
+#stlChanger .chBody {
+	background: rgba(240, 240, 240, 0.5);
+	width: 180px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-radius: 0 6px 6px 0;
+}
+
+#stlChanger .chBut {
+	background: #444;
+	width: 40px;
+	height: 40px;
+	position:absolute;
+	top: 15px;
+	right:0px;
+	z-index:10;
+	text-align: center;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#stlChanger .chBut i {
+	color:#fff;
+	font-size: 28px;
+	margin: 6px;
+}
+
+#stlChanger .stBlock {
+	position:relative;
+	overflow:hidden;
+}
+
+#stlChanger .stBlock p {
+	color: #444;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	margin-left: 22px;
+}
+
+#stlChanger h4 {
+	color: #444;
+	font-size: 18px;
+	background: #444;
+	font-weight: 900;
+	line-height: 22px;
+	display:block;
+	margin-top: 0;
+	padding: 8px 10px 9px;
+}
+
+#stlChanger .stBgs a  {
+	text-decoration:none;
+	width: 45px;
+	height: 45px;
+	float:left;
+	padding:0;
+	margin: 3px 3px 0 0;
+	cursor:pointer;
+	opacity: 1;
+}
+
+#stlChanger .stBgs a:hover {
+	opacity: 0.7;
+}
+
+#stlChanger .btn-black {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700; 
+	text-transform: none;	
+	padding: 6px 10px;
+}
+
