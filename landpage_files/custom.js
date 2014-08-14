@@ -4,19 +4,19 @@
 	/*----------------------------------------------------*/
 	/*	preLoader
 	/*----------------------------------------------------*/
-	$(document).ready(function(){
+	// $(document).ready(function(){
 	
-		"use strict";
+	// 	"use strict";
 	
-		$('body').jpreLoader({
-			loaderVPos: '50%',
-			autoClose: true,
-		}, 
-		function() {	
-			$('body').animate({"opacity":'1'},{queue:false,duration:1200,easing:"easeInOutQuad"});
-		});
+	// 	$('body').jpreLoader({
+	// 		loaderVPos: '50%',
+	// 		autoClose: true,
+	// 	}, 
+	// 	function() {	
+	// 		$('body').animate({"opacity":'1'},{queue:false,duration:1200,easing:"easeInOutQuad"});
+	// 	});
 		
-	});
+	// });
 	
 	
 	
