@@ -188,13 +188,18 @@ ul {
 .navbar-brand {
 	padding: 15px;
 }   
+
+#top-page-banner {
+	font-size: 25px;
+	color: black;
+}
       
 /*------------------------------------------*/
 /*	 Navigation Menu    
 /*------------------------------------------*/
 
 .navbar {	
-	background-color: #f0f0f0;
+	background-color: #FFFFFF;
 	border-bottom: 1px solid #ddd;
 }
 
