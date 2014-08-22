@@ -819,3 +819,33 @@ li a.dropbox {
 	width: 76px;
 }
   
+#cover_description {
+	margin: 20px 0;
+	text-align: center;
+
+}
+#cover {
+
+}
+#cover_image {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	text-align: center;;
+
+}
+#cover_image .img-responsive {
+
+}
+#cover_description h1 {
+	font-size: 60px;
+	line-height: 40px;
+
+}
+#features {
+	padding-top: 30px;
+
+}
+.feature-box {
+
+}
