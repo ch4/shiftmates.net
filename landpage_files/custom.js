@@ -1,6 +1,22 @@
 // JavaScript Document
 
 
+
+	/** sign up form **/
+	$(document).ready(function() {
+		$("#try-now").click(function() {
+			$("#try-now").hide();
+			$("#mc_embed_signup").show();
+		});
+		$("#mc-embedded-subscribe").click(function() {
+			$("#mc_embed_signup").hide();
+			$("#try-now").show();
+		});
+	});
+	
+
+
+
 	/*----------------------------------------------------*/
 	/*	preLoader
 	/*----------------------------------------------------*/
