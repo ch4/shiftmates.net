@@ -5,8 +5,17 @@
 	/** sign up form **/
 	$(document).ready(function() {
 		$("#try-now").click(function() {
-			$("#try-now").hide();
-			$("#mc_embed_signup").show();
+			
+			$("#mc_embed_signup").slideDown(600, function() {
+				// $("#mc-embedded-subscribe").show();
+				// $("#try-now").hide();
+				
+		  	});
+		  	// $("#mc-embedded-subscribe").show();
+		  	$("#try-now").slideUp(600, function() {
+		  		
+		  	});
+		  	
 		});
 		$("#mc-embedded-subscribe").click(function() {
 			$("#mc_embed_signup").hide();
