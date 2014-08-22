@@ -14,7 +14,7 @@
 	/*	 Cover
 	/*------------------------------------------*/
 	
-	#cover_description { margin: 80px 0; }
+	#cover_description { margin: 20px 0; }
 	
 	/*------------------------------------------*/
 	/*	 Pricing
@@ -61,7 +61,7 @@
 	/*------------------------------------------*/
 	
 	#cover {font-size: 16px; }
-	#cover_description { margin: 40px 0; }	
+	#cover_description { margin: 10px 0; }	
 	#cover_description h2 { font-size: 36px; }
 	#cover_description h1 {font-size: 54px; line-height: 54px; margin-top: 10px; margin-bottom: 10px; }
 	
