@@ -26,7 +26,6 @@
 
 		$("#mc-embedded-subscribe").click(function() {
             signUpUser();
-			$("#mc_embed_signup").hide();
 //			$("#try-now").show();
 		});
 
@@ -47,8 +46,10 @@
 
                 newUser.save(null, {
                     success: function(newUser) {
+                        $("#mc_embed_signup").hide();
                         $("#signup-msg").text(successMsg);
                         $("#signup-msg").show();
+
 //                        alert("Signed up!");
                         console.log("You are signed up!");
                     },
