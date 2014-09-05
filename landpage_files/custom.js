@@ -7,6 +7,7 @@
         Parse.initialize("4qBl1DjcQ9oL4dsfn5H0ivnsjdjS8lafrivK8xl3", "G9w6N59XLGZuPrvJWqQmSzwr6oulrMGflrpeOjd6");
         var SignUpUser = Parse.Object.extend("SignupUser");
         $("#signup-msg").hide();
+        $("#signup-warning").hide();
 		$("#try-now").click(function() {
 			
 			$("#mc_embed_signup").slideDown(600, function() {
@@ -29,15 +30,22 @@
 //			$("#try-now").show();
 		});
 
+
+        function validateEmail(email) {
+            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
         function signUpUser() {
             var successMsg = "Success! You'll be among the first to receive early access to Shiftmates.";
             var errorMsg = "Uh oh, our system glitched. Try again.";
             var email = $("#email").val();
-            if ( typeof email == 'undefined' || email == "" ) {
-                $("#signup-msg").text("Please provide a valid email address.");
-                $("#signup-msg").show();
+            if ( typeof email == 'undefined' || email == "" || !validateEmail(email) ) {
+                $("#signup-warning").text("Please provide a valid email address.");
+                $("#signup-warning").show();
                 console.log("Missing email");
             } else {
+                $("#signup-warning").hide();
                 var newUser = new SignUpUser();
                 newUser.set("email", $("#email").val());
                 newUser.set("first_name", $("#first_name").val());
