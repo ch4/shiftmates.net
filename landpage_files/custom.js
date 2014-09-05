@@ -4,6 +4,9 @@
 
 	/** sign up form **/
 	$(document).ready(function() {
+        Parse.initialize("4qBl1DjcQ9oL4dsfn5H0ivnsjdjS8lafrivK8xl3", "G9w6N59XLGZuPrvJWqQmSzwr6oulrMGflrpeOjd6");
+        var SignUpUser = Parse.Object.extend("SignupUser");
+        $("#signup-msg").hide();
 		$("#try-now").click(function() {
 			
 			$("#mc_embed_signup").slideDown(600, function() {
@@ -17,11 +20,51 @@
 		  	});
 		  	
 		});
+
+
+
+
 		$("#mc-embedded-subscribe").click(function() {
+            signUpUser();
 			$("#mc_embed_signup").hide();
-			$("#try-now").show();
+//			$("#try-now").show();
 		});
+
+        function signUpUser() {
+            var successMsg = "Success! You'll be among the first to receive early access to Shiftmates.";
+            var errorMsg = "Uh oh, our system glitched. Try again.";
+            var email = $("#email").val();
+            if ( typeof email == 'undefined' || email == "" ) {
+                $("#signup-msg").text("Please provide a valid email address.");
+                $("#signup-msg").show();
+                console.log("Missing email");
+            } else {
+                var newUser = new SignUpUser();
+                newUser.set("email", $("#email").val());
+                newUser.set("first_name", $("#first_name").val());
+                newUser.set("last_name", $("#last_name").val());
+                newUser.set("company", $("#company").val());
+
+                newUser.save(null, {
+                    success: function(newUser) {
+                        $("#signup-msg").text(successMsg);
+                        $("#signup-msg").show();
+//                        alert("Signed up!");
+                        console.log("You are signed up!");
+                    },
+                    error: function(newUser, error) {
+                        alert("Error signing up!");
+                        $("#signup-msg").text(errorMsg);
+                        $("#signup-msg").show();
+                        console.log("Error signing up: " + JSON.stringify(error));
+                    }
+                });
+            }
+
+        }
 	});
+
+
 	
 
 
