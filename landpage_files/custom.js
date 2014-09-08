@@ -75,9 +75,24 @@
         }
 
         function getAddress() {
-            $.get("http://beta.shiftmates.net/ping", function( data ) {
-                console.log("Address is " + data.ping);
-                return data.ping;
+//            $.getJSON("http://beta.shiftmates.net/ping?callback=?", function( data ) {
+//                console.log("Address is " + data.ping);
+//                return data.ping;
+//            });
+
+            $.ajax({
+                type: 'GET',
+                url: 'http://beta.shiftmates.net/ping',
+                async: false,
+                contentType: "application/json",
+                dataType: 'jsonp',
+                success: function(json) {
+                    console.log("Address is " + data.ping);
+                    return data.ping;
+                },
+                error: function(e) {
+                    console.log(e.message);
+                }
             });
         }
 	});
