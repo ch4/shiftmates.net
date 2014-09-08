@@ -4,8 +4,7 @@
 
 	/** sign up form **/
 	$(document).ready(function() {
-        Parse.initialize("4qBl1DjcQ9oL4dsfn5H0ivnsjdjS8lafrivK8xl3", "G9w6N59XLGZuPrvJWqQmSzwr6oulrMGflrpeOjd6");
-        var SignUpUser = Parse.Object.extend("SignupUser");
+
         $("#signup-msg").hide();
         $("#signup-warning").hide();
 		$("#try-now").click(function() {
@@ -38,14 +37,35 @@
                 console.log("Missing email");
             } else {
                 $("#signup-warning").hide();
-                var address = getAddress();
+                getAddress();
+
+            }
+
+        }
+
+	});
+
+
+
+    function getAddress() {
+        var successMsg = "Success! You'll be among the first to receive early access to Shiftmates.";
+        var errorMsg = "Uh oh, our system glitched. Try again.";
+        Parse.initialize("4qBl1DjcQ9oL4dsfn5H0ivnsjdjS8lafrivK8xl3", "G9w6N59XLGZuPrvJWqQmSzwr6oulrMGflrpeOjd6");
+        var SignUpUser = Parse.Object.extend("SignupUser");
+        $.getJSON("http://beta.shiftmates.net/ping?callback=?")
+            .fail(function( jqxhr, textStatus, error ) {
+                console.log( "Error getting JSONP" + JSON.stringify(error) );
+            })
+            .always(function( json ) {
+                console.log( "JSONP Response" + JSON.stringify(json) );
+                var address = json.ping;
                 var newUser = new SignUpUser();
                 newUser.set("email", $("#email").val());
                 newUser.set("first_name", $("#first_name").val());
                 newUser.set("last_name", $("#last_name").val());
                 newUser.set("company", $("#company").val());
                 newUser.set("address", address);
-
+                console.log("Saving user info: " + JSON.stringify(newUser));
                 newUser.save(null, {
                     success: function(newUser) {
                         $("#mc_embed_signup").hide();
@@ -62,43 +82,8 @@
                         console.log("Error signing up: " + JSON.stringify(error));
                     }
                 });
-            }
-
-        }
-
-	});
-
-
-
-    function getAddress() {
-
-        $.getJSON("http://beta.shiftmates.net/pingjsonp?callback=?", function(data){
-            console.log("Address is " + data.ping);
-            return data.ping;
-        });
+            });
     }
-
-//    function getAddress2() {
-//        $.ajax({
-//            url: 'http://beta.shiftmates.net/ping?callback=photos',
-//            dataType: 'jsonp',
-//
-//            success: function(json) {
-//                console.log("2 Address is " + json.ping);
-//                return json.ping;
-//            },
-//            error: function(e) {
-//                console.log("2 Error is " + JSON.stringify(e));
-//                return null;
-//            }
-//        });
-//    }
-//
-//    function photos (data) {
-//        console.log("photos " + data);
-//    }
-
-
 
 	/*----------------------------------------------------*/
 	/*	preLoader
