@@ -66,32 +66,39 @@
 
         }
 
-        function getAddress() {
-//            $.getJSON("http://beta.shiftmates.net/ping?callback=?", function( data ) {
-//                console.log("Address is " + data.ping);
-//                return data.ping;
-//            });
-
-            $.ajax({
-                type: 'GET',
-                url: 'http://beta.shiftmates.net/ping',
-                async: false,
-                contentType: "application/json",
-                dataType: 'jsonp',
-                success: function(json) {
-                    console.log("Address is " + json.ping);
-                    return json.ping;
-                },
-                error: function(e) {
-                    console.log("Error is " + e.message);
-                    return null;
-                }
-            });
-        }
 	});
 
 
-	
+
+    function getAddress() {
+
+        $.getJSON("http://beta.shiftmates.net/ping?callback=?", function(data){
+            console.log("Address is " + data.ping);
+            return data.ping;
+        });
+    }
+
+    function getAddress2() {
+        $.ajax({
+            type: 'GET',
+            url: 'http://beta.shiftmates.net/ping?callback=photos',
+            dataType: 'jsonp',
+            jsonpCallback: 'photos',
+            jsonp: 'callback'
+            success: function(json) {
+                console.log("2 Address is " + json.ping);
+                return json.ping;
+            },
+            error: function(e) {
+                console.log("2 Error is " + e.message);
+                return null;
+            }
+        });
+    }
+
+    function photos (data) {
+        console.log("photos " + data);
+    }
 
 
 
@@ -410,15 +417,15 @@
 				first_name:{
 					required: true,
 					minlength: 4,
-					maxlength: 16,
+					maxlength: 16
 					},
 					email:{
 						required: true,
-						email: true,
+						email: true
 					},					
 					message:{
 						required: true,
-						minlength: 2,
+						minlength: 2
 						}
 					},
 					messages:{
@@ -428,7 +435,7 @@
 							}, 
 							message:{
 								required: "Please enter no more than (2) characters"
-							}, 
+							}
 						}
 		});			
 		
