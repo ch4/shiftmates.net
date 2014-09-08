@@ -9,27 +9,19 @@
         $("#signup-msg").hide();
         $("#signup-warning").hide();
 		$("#try-now").click(function() {
-			
 			$("#mc_embed_signup").slideDown(600, function() {
 				// $("#mc-embedded-subscribe").show();
 				// $("#try-now").hide();
 				
 		  	});
-		  	// $("#mc-embedded-subscribe").show();
 		  	$("#try-now").slideUp(600, function() {
 		  		
 		  	});
-		  	
 		});
-
-
-
 
 		$("#mc-embedded-subscribe").click(function() {
             signUpUser();
-//			$("#try-now").show();
 		});
-
 
         function validateEmail(email) {
             var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -87,11 +79,12 @@
                 contentType: "application/json",
                 dataType: 'jsonp',
                 success: function(json) {
-                    console.log("Address is " + data.ping);
-                    return data.ping;
+                    console.log("Address is " + json.ping);
+                    return json.ping;
                 },
                 error: function(e) {
-                    console.log(e.message);
+                    console.log("Error is " + e.message);
+                    return null;
                 }
             });
         }
