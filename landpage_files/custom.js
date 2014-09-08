@@ -46,11 +46,13 @@
                 console.log("Missing email");
             } else {
                 $("#signup-warning").hide();
+                var address = getAddress();
                 var newUser = new SignUpUser();
                 newUser.set("email", $("#email").val());
                 newUser.set("first_name", $("#first_name").val());
                 newUser.set("last_name", $("#last_name").val());
                 newUser.set("company", $("#company").val());
+                newUser.set("address", address);
 
                 newUser.save(null, {
                     success: function(newUser) {
@@ -70,6 +72,13 @@
                 });
             }
 
+        }
+
+        function getAddress() {
+            $.get( "beta.shiftmates.net/ping", function( data ) {
+                console.log("Address is " + data.ping);
+                return data.ping;
+            });
         }
 	});
 
