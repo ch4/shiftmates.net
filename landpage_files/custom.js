@@ -75,7 +75,7 @@
         }
 
         function getAddress() {
-            $.get( "beta.shiftmates.net/ping", function( data ) {
+            $.get("http://beta.shiftmates.net/ping", function( data ) {
                 console.log("Address is " + data.ping);
                 return data.ping;
             });
