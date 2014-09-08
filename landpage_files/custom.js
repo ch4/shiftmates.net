@@ -72,33 +72,31 @@
 
     function getAddress() {
 
-        $.getJSON("http://beta.shiftmates.net/ping?callback=?", function(data){
+        $.getJSON("http://beta.shiftmates.net/pingjsonp?callback=?", function(data){
             console.log("Address is " + data.ping);
             return data.ping;
         });
     }
 
-    function getAddress2() {
-        $.ajax({
-            type: 'GET',
-            url: 'http://beta.shiftmates.net/ping?callback=photos',
-            dataType: 'jsonp',
-            jsonpCallback: 'photos',
-            jsonp: 'callback',
-            success: function(json) {
-                console.log("2 Address is " + json.ping);
-                return json.ping;
-            },
-            error: function(e) {
-                console.log("2 Error is " + e.message);
-                return null;
-            }
-        });
-    }
-
-    function photos (data) {
-        console.log("photos " + data);
-    }
+//    function getAddress2() {
+//        $.ajax({
+//            url: 'http://beta.shiftmates.net/ping?callback=photos',
+//            dataType: 'jsonp',
+//
+//            success: function(json) {
+//                console.log("2 Address is " + json.ping);
+//                return json.ping;
+//            },
+//            error: function(e) {
+//                console.log("2 Error is " + JSON.stringify(e));
+//                return null;
+//            }
+//        });
+//    }
+//
+//    function photos (data) {
+//        console.log("photos " + data);
+//    }
 
 
 
