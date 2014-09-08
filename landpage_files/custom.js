@@ -84,7 +84,7 @@
             url: 'http://beta.shiftmates.net/ping?callback=photos',
             dataType: 'jsonp',
             jsonpCallback: 'photos',
-            jsonp: 'callback'
+            jsonp: 'callback',
             success: function(json) {
                 console.log("2 Address is " + json.ping);
                 return json.ping;
