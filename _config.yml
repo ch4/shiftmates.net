@@ -3,7 +3,7 @@ title: Shiftmates Blog
 header-img: img/home-bg.jpg
 email: hello@shiftmates.net
 description: "Give and get extra hours at work with coworkers. Shiftmates connects employees to simplify shift trading!"
-baseurl: "/"
+baseurl: "/blog"
 url: "http://shiftmates.net"
 twitter_username: shiftmates
 github_username:  ch4
