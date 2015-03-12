@@ -5,18 +5,27 @@
 	/** sign up form **/
 	$(document).ready(function() {
 
+$(".modal-wide").on("show.bs.modal", function() {
+  var height = $(window).height() - 200;
+  $(this).find(".modal-body").css("max-height", height);
+});
+
+// $(function () {
+		// $(".youtube").YouTubeModal({autoplay:0, width:640, height:480});
+	// });
+
         $("#signup-msg").hide();
         $("#signup-warning").hide();
-		$("#try-now").click(function() {
-			$("#mc_embed_signup").slideDown(600, function() {
-				// $("#mc-embedded-subscribe").show();
-				// $("#try-now").hide();
+		// $("#try-now").click(function() {
+		// 	$("#mc_embed_signup").slideDown(600, function() {
+		// 		// $("#mc-embedded-subscribe").show();
+		// 		// $("#try-now").hide();
 				
-		  	});
-		  	$("#try-now").slideUp(600, function() {
+		//   	});
+		//   	$("#try-now").slideUp(600, function() {
 		  		
-		  	});
-		});
+		//   	});
+		// });
 
 		$("#mc-embedded-subscribe").click(function() {
             signUpUser();

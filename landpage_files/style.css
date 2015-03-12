@@ -1352,3 +1352,22 @@ margin-bottom: 20px;
 #signup-warning {
     color: red;
 }
+
+
+/* Modal Demo */
+
+.try-now {
+	font-size: 22px;
+	padding-top: 10px;	
+}
+
+
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+/* irrelevant styling */
+#tallModal .modal-body p { margin-bottom: 900px }
